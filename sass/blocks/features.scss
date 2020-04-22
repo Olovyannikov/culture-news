@@ -1,0 +1,119 @@
+@import "sass/colors";
+
+.features {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  background: $background-secondary;
+}
+
+.features::after {
+  position: absolute;
+  display: block;
+  content: '';
+  background: #FFF;
+  border-radius: 50%;
+  width: 707px;
+  height: 707px;
+  top: -76px;
+  left: 50%;
+  margin-left: -353px;
+  z-index: -1;
+}
+
+@media (max-width: 1399px) {
+  .features::after {
+  display: none;
+
+  }
+}
+
+.features__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  padding-top: 33px;
+}
+
+.features__list {
+  list-style: none;
+  margin-bottom: 0;
+  padding-bottom: 35px;
+}
+
+.features__item-title {
+  font-family: "Playfair Display",'Georgia',sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 31px;
+  margin: 10px 0;
+  z-index: 2;
+}
+
+.features__item-description {
+  width: 370px;
+  margin: 0 auto;
+  margin-bottom: 52px;
+  z-index: 2;
+}
+
+.features__item {
+  position: relative;
+}
+
+.features__item:not(:nth-child(3))::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100px;
+  left: 50%;
+  margin-left: -50px;
+  top: 103px;
+  height: 0px;
+  opacity: 0.4;
+  border: 1px solid rgba(0,0,0, 0.2);
+}
+
+.features__button {
+  display: block;
+  width: 120px;
+  text-align: left;
+  margin: 0 auto;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  background-color: #FF7931;
+  transition: .3s;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 3px;
+  &:hover {
+    font-weight: bold;
+    color: black;
+  }
+}
+
+.features__button-inner {
+  position: relative;
+}
+
+.features__button-inner::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 25px;
+  top: -7px;
+  right: -30px;
+  background: url("../img/icons/Shape.svg") center no-repeat;
+  transition: .3s;
+}
+
+.features__button:hover .features__button-inner::after{
+  right: -40px;
+}

@@ -1,0 +1,49 @@
+.materials {
+  z-index: 3;
+  cursor: pointer;
+  width: 370px;
+  &:hover .materials__title{
+  color: $orange;
+  }
+  &:hover .materials__image {
+    transform: scale(1.1);
+  }
+}
+
+.materials__link {
+  text-decoration: none;
+  color: black;
+}
+
+.materials__image {
+  margin-bottom: 15px;
+  width: 370px;
+  height: 203px;
+  overflow:hidden;
+  transition: all 1.1s;
+}
+
+.materials__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display','Georgia',sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 31px;
+  letter-spacing: 0;
+
+}
+
+.materials__description {
+  font-size: 14px;
+  line-height: 150%;
+  margin-top: 0;
+}
+
+@media (max-width: 1399px) {
+.page-main__materials {
+  flex-direction: column;
+  align-items: center;
+}
+}

@@ -1,0 +1,21 @@
+.page-main {
+  padding-top: 30px;
+  margin-bottom: 40px;
+}
+
+.page-main__subtitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  padding-bottom: 7px;
+  width: 100%;
+}
+
+.page-main__materials {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}

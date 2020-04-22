@@ -1,0 +1,47 @@
+@import "sass/colors";
+
+
+.latest__wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background: url('../img/underwater-hotel.jpg') no-repeat center;
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+.latest__title {
+  position: relative;
+  font-size: 72px;
+  line-height: 84px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: lighter;
+  padding-top: 133px;
+  margin-top: 22px;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 27px;
+    height: 18px;
+    border-radius: 50%;
+    padding: 18.5px 14px;
+    top: 45px;
+    left: 50%;
+    margin-left: -27px;
+    background: $orange url("../img/icons/header-icon.png") center no-repeat;
+  }
+}
+
+.latest__description {
+  text-align: center;
+  color: #FFFFFF;
+  max-width: 550px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 22px;
+  padding-top: 75px;
+  padding-bottom: 46px;
+}

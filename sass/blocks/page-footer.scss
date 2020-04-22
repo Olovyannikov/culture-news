@@ -1,0 +1,44 @@
+.page-footer {
+  margin-top: 50px ;
+  background-color: #575757;
+  padding-left: 135px;
+  padding-right: 135px;
+  position: relative;
+  z-index: 2;
+}
+
+.page-footer__title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 37px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 27px;
+  padding-bottom: 10px;
+}
+
+.page-footer__navigation {
+  padding-bottom: 30px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+@media (max-width: 480px) {
+  .page-footer__navigation {
+    width: 479px;
+  }
+}
+
+.page-footer__navigation a{
+  color: white;
+}
+
+.page-footer__social {
+  justify-content: space-between;
+  width: 169px;
+  margin: 0 auto;
+}
+
+
+
