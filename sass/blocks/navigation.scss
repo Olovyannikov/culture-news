@@ -20,6 +20,13 @@
   margin-right: 3px;
 }
 
+
+@media (max-width: 768px) {
+  .navigation__list-item {
+    margin-right: 95px;
+  }
+}
+
 .navigation__list-link {
   color: #000000;
 }
@@ -48,4 +55,3 @@
   text-decoration: none;
   text-transform: uppercase;
 }
-
